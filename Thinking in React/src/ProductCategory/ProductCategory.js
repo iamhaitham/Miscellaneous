@@ -1,11 +1,11 @@
-
+import './ProductCategory.css';
 
 function ProductCategory(props) {
     const { categoryName } = props;
 
     return (
       <>
-        <p>{categoryName}</p>
+        <p className='boldCategory'>{categoryName}</p>
       </>
     );
   }
