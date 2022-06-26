@@ -9,7 +9,7 @@ function Products(props) {
 
     productsRows.forEach(p => rows.push(
         <React.Fragment key={p.id}>
-            <span> {p.name} </span>
+            <span style={p.isInStock ? {color: 'black'} : {color: 'red'}}> {p.name} </span>
             <span> {p.price} </span>
         </React.Fragment>
     ));
