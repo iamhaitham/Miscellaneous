@@ -1,0 +1,4 @@
+.productsAsGrid {
+    display: grid;
+    grid-template-columns: 130px auto;
+}

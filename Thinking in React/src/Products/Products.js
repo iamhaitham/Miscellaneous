@@ -1,4 +1,5 @@
 import React from "react";
+import './Products.css';
 
 function Products(props) {
     const { categoryName, products } = props;
@@ -8,10 +9,10 @@ function Products(props) {
     let rows = [];
 
     productsRows.forEach(p => rows.push(
-        <React.Fragment key={p.id}>
+        <div key={p.id} className='productsAsGrid'>
             <span style={p.isInStock ? {color: 'black'} : {color: 'red'}}> {p.name} </span>
             <span> {p.price} </span>
-        </React.Fragment>
+        </div>
     ));
 
     return ( 
