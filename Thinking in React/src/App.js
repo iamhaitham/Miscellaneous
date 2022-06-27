@@ -5,11 +5,12 @@ import SearchBar from './SearchBar/SearchBar';
 
 function App() {
   const [searchTerm, setSearchTerm] = useState('');
+  const [isInStockOnly, setIsInStockOnly] = useState(false);
 
   return (
     <>
-      <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
-      <ProductsTable searchTerm={searchTerm}/>
+      <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} isInStockOnly={isInStockOnly} setIsInStockOnly={setIsInStockOnly}/>
+      <ProductsTable searchTerm={searchTerm} isInStockOnly={isInStockOnly}/>
     </>
   );
 }
