@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
-      <ProductsTable/>
+      <ProductsTable searchTerm={searchTerm}/>
     </>
   );
 }

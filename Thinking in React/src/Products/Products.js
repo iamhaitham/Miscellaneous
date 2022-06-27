@@ -1,9 +1,11 @@
 import './Products.css';
 
 function Products(props) {
-    const { categoryName, products } = props;
+    const { categoryName, products, searchTerm } = props;
     
-    let productsRows = products.filter(p => p.category === categoryName);
+    let productsRows = searchTerm === '' ? 
+        products.filter(p => p.category === categoryName) : 
+        products.filter(p => p.category === categoryName && p.name.toLowerCase().includes(searchTerm.toLowerCase()));
     
     let rows = [];
 

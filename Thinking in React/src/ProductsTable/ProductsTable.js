@@ -3,7 +3,9 @@ import Products from '../Products/Products';
 import ProductCategory from '../ProductCategory/ProductCategory';
 import ProductsTableHeaders from "../ProductsTableHeaders/ProductsTableHeaders";
 
-function ProductsTable() {
+function ProductsTable(props) {
+  const { searchTerm } = props;
+
   const products = [
     {'id': 1, 'name': 'Apple', 'price': '$1', 'isInStock': true, 'category': 'Fruits'},
     {'id': 2, 'name': 'Dragonfruit', 'price': '$1', 'isInStock': true, 'category': 'Fruits'},
@@ -25,7 +27,7 @@ function ProductsTable() {
     allProducts.push(
       <React.Fragment key={categories[i].id}>
         <ProductCategory categoryName={categories[i].name}/>
-        <Products categoryName={categories[i].name} products={products}/>
+        <Products categoryName={categories[i].name} products={products} searchTerm={searchTerm}/>
       </React.Fragment>
     );
   }
