@@ -1,3 +1,9 @@
+# Thinking in React
+
+This application was built as an attempt to practice [the official Thinking in React Tutorial](https://beta.reactjs.org/learn/thinking-in-react).
+
+The solution might differ from the one in the documentation as I wanted to practice it my way, taking into consideration the basics the I should be familiar with up to this point.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
