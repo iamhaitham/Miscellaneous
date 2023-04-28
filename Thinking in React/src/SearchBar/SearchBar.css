@@ -1,0 +1,8 @@
+.searchForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.searchInput {
+    width: 200px;
+}

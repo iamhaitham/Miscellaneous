@@ -1,0 +1,54 @@
+
+.camera-container {
+    background: linear-gradient(#e4c9be 0 0) padding-box, linear-gradient(to top, #fffefe, #b99588) border-box;
+    padding: 10px;
+    width: 8%;
+    border: 4px solid transparent;
+    border-radius: 55px 0px 55px 0;
+    box-shadow: 0px 0px 7px #b99588 inset;
+}
+
+.outer-camera-lens {
+    background: black;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0 10px 5px;
+	border: 4px solid transparent;
+	background-image: linear-gradient(black, black), radial-gradient(circle at top left, #6c5c58, #fdfeee), radial-gradient(circle at top right, red, blue);
+	background-origin: border-box;
+	background-clip: content-box, border-box;
+
+}
+
+.inner-camera-lens {
+    background-color: #262626;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-camera-lens-2 {
+    background-color:#273433;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 30px #273433;
+}
+
+.inner-camera-lens-3 {
+    background-color:#a8c1e1;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    box-shadow: 0 0 15px #a8c1e1;
+}

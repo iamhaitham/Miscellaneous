@@ -1,0 +1,8 @@
+.boldCategory {
+    font-weight: 700;
+}
+
+.productCategoryAsGrid { 
+    display: grid;
+    grid-template-columns: 50px auto;
+}

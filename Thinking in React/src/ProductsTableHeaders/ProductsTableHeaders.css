@@ -1,0 +1,6 @@
+.productsTableHeaders {
+    font-weight: 700;
+    display: grid;
+    grid-template-columns: 130px auto;
+    column-gap: 5px;
+}
