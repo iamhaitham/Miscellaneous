@@ -1,5 +1,4 @@
-﻿using Bogus.DataSets;
-using GraphQLDemo.API.Schema.Mutations;
+﻿using GraphQLDemo.API.Schema.Mutations;
 using HotChocolate.Execution;
 using HotChocolate.Subscriptions;
 

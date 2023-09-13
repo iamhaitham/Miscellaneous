@@ -9,6 +9,6 @@ namespace GraphQLDemo.API.DTOs
         public Subject Subject { get; set; }
         public Guid InstructorId { get; set; }
         public InstructorDTO Instructor { get; set; }
-        public IEnumerable<StudentDTO> Students { get; set; } = Enumerable.Empty<StudentDTO>();
+        public ICollection<StudentDTO> Students { get; set; } = new List<StudentDTO>();
     }
 }
