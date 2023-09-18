@@ -14,7 +14,6 @@ namespace GraphQLDemo.API.Schema.Queries
 
         public async Task<IEnumerable<CourseType>> GetCourses()
         {
-
             IEnumerable<CourseDTO> courseDTOs = await _courseRepository.GetAll();
 
             return courseDTOs.Select(course => new CourseType()
@@ -22,13 +21,7 @@ namespace GraphQLDemo.API.Schema.Queries
                 Id = course.Id,
                 Name = course.Name,
                 Subject = course.Subject,
-                Instructor = new InstructorType()
-                {
-                    Id = course.Instructor.Id,
-                    FirstName = course.Instructor.FirstName,
-                    LastName = course.Instructor.LastName,
-                    Salary = course.Instructor.Salary
-                }
+                InstructorId = course.InstructorId
             });
         }
 
@@ -44,13 +37,7 @@ namespace GraphQLDemo.API.Schema.Queries
                 Id = courseDTO.Id,
                 Name = courseDTO.Name,
                 Subject = courseDTO.Subject,
-                Instructor = new InstructorType()
-                {
-                    Id = courseDTO.Instructor.Id,
-                    FirstName = courseDTO.Instructor.FirstName,
-                    LastName = courseDTO.Instructor.LastName,
-                    Salary = courseDTO.Instructor.Salary
-                }
+                InstructorId = courseDTO.InstructorId
             };
         }
 
