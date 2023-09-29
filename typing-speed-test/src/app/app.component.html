@@ -1,0 +1,4 @@
+<span 
+  *ngFor="let text of (displayedCharacters$ | async)"
+  [ngClass]="[text.colorClass, 'white']"
+  >{{ text.char }}</span>
