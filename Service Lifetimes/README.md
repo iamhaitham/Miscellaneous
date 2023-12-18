@@ -21,5 +21,5 @@ In addition to those, there are also 3 more services:
 I have created these services in the consuming class rather than injecting them, which means I did not register them in the IoC Container either.\
 The goal is to have more understanding on the topic, and how the registered services actually work.
 
-### Useful resource
+## Useful resource
 [Dependency Injection and Service Lifetimes in .NET Core](https://henriquesd.medium.com/dependency-injection-and-service-lifetimes-in-net-core-ab9189349420)
