@@ -16,7 +16,7 @@ namespace Service_Lifetimes.Controllers
         // Scoped
         private readonly IScopedService _scopedService1;
         private readonly IScopedService _scopedService2;
-        private readonly IScopedEquivalent _scopedEquivalent;
+        private IScopedEquivalent? _scopedEquivalent;
 
         // Transient
         private readonly ITransientService _transientService1;
@@ -35,7 +35,6 @@ namespace Service_Lifetimes.Controllers
             _singletonService2 = singletonService2;
             _scopedService1 = scopedService1;
             _scopedService2 = scopedService2;
-            _scopedEquivalent = new ScopedEquivalent();
             _transientService1 = transientService1;
             _transientService2 = transientService2;
         }
@@ -61,6 +60,7 @@ namespace Service_Lifetimes.Controllers
             var scopedResult2 = _scopedService2.GetGuid();
 
             // Scoped Equivalent
+            _scopedEquivalent = new ScopedEquivalent();
             var scopedEquivalentResult1 = _scopedEquivalent.GetGuid();
             var scopedEquivalentResult2 = _scopedEquivalent.GetGuid();
 
