@@ -10,7 +10,7 @@ namespace Service_Lifetimes.Controllers
         {
         }
 
-        [HttpGet(Name = "GetWeatherForecast")]
+        [HttpGet]
         public ActionResult Get()
         {
             return Ok();
