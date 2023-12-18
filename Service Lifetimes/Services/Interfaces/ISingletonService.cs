@@ -1,6 +1,6 @@
 ﻿namespace Service_Lifetimes.Services.Interfaces
 {
-    public interface ISingletonService
+    public interface ISingletonService : IService
     {
     }
 }
