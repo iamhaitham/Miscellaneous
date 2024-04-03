@@ -8,10 +8,12 @@ This solution aims to demonstrate [the three lifetimes of a service](https://lea
 * Singleton
 * Scoped
 * Transient
+
 For this purpose I have created 3 services:
 * ISingletonService -> SingletonService
 * IScopedService -> ScopedService
 * ITransientService -> TransientService
+
 In addition to those, there are also 3 more services:
 * ISingletonEquivalent -> SingletonEquivalent
 * IScopedEquivalent -> ScopedEquivalent
